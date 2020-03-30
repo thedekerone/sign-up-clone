@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Frontend Mentor - Intro component with sign up form
 
 ![Design preview for the Intro component with sign up form coding challenge](./design/desktop-preview.jpg)
@@ -73,3 +74,6 @@ Feedback is always welcome, so if you have any to give on this challenge please 
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+=======
+# sign-up-clone
+>>>>>>> d976bb8376c7c3b125a716648d88b320dcae2683
