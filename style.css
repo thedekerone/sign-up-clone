@@ -3,15 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
+
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 100vw;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   height: 100vh;
-  background: #fa7978 url('images/bg-intro-desktop.png');
+  background: #fa7978 url("images/bg-intro-desktop.png");
+}
+
+button {
+  cursor: pointer;
 }
 
 .main {
@@ -28,12 +34,51 @@ body {
   display: flex;
   flex-direction: column;
 }
-form {
+.form {
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
   background-color: white;
-  padding: 2rem 2rem 4rem 2rem;
+  padding: 4rem 4.5rem;
 }
+
+.form > input,
+.form__button {
+  padding: 2rem;
+  border: none;
+  width: 50rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  border: 1px solid hsl(246, 25%, 77%);
+}
+.form > label {
+  position: relative;
+}
+
+.form > input::placeholder {
+  font-weight: bold;
+}
+
+.form > input:focus {
+  outline: none;
+  border: 1px solid hsl(249, 10%, 26%);
+}
+
+.form__button {
+  background-color: hsl(154, 59%, 51%);
+  margin-top: 1rem;
+  color: white;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 3px solid rgba(2, 2, 2, 0.205);
+}
+
+.form__button:hover {
+  background-color: hsl(154, 94%, 65%);
+}
+
 .hero {
   max-width: 700px;
   width: 100%;
@@ -55,13 +100,34 @@ form {
   background-color: hsl(248, 32%, 49%);
   color: white;
   padding: 3rem 4rem;
-  margin-bottom: 1.7rem;
+  margin-bottom: 2.5rem;
   font-size: 1.6rem;
   border-radius: 10px;
-  box-shadow: 0px 8px 0px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 9px 0px 0px rgba(0, 0, 0, 0.2);
   border: none;
 }
 .bold {
   display: inline;
   font-weight: bold;
+}
+
+.agreement {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.warning::after {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url(images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 1.2rem;
+  top: 4.2rem;
+}
+
+.warning + input {
+  border: 1px solid hsl(0, 100%, 74%);
 }
