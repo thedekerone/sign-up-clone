@@ -9,11 +9,11 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   width: 100vw;
   font-size: 1.6rem;
   height: 100vh;
-  background: #fa7978 url("images/bg-intro-desktop.png");
+  background: #fa7978 url('images/bg-intro-desktop.png');
 }
 
 button {
@@ -117,7 +117,7 @@ button {
 }
 
 .warning::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 2.5rem;
   height: 2.5rem;
@@ -130,4 +130,16 @@ button {
 
 .warning + input {
   border: 1px solid hsl(0, 100%, 74%);
+}
+
+.error {
+  float: right;
+  font-size: 1.4rem;
+  margin-left: auto;
+  color: hsl(0, 100%, 74%);
+  display: none;
+}
+
+.show {
+  display: block;
 }

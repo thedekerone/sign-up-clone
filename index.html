@@ -42,11 +42,21 @@
             type="text"
             id="first"
             placeholder="First Name"
+            required
           />
+          <div class="error">First Name cannot be empty</div>
+
           <label for="last">
             Last Name
           </label>
-          <input class="input" type="text" id="last" placeholder="Last Name" />
+          <input
+            class="input"
+            type="text"
+            id="last"
+            placeholder="Last Name"
+            required
+          />
+          <div class="error">Last Name cannot be empty</div>
           <label for="email">
             Email
           </label>
@@ -55,7 +65,9 @@
             type="email"
             placeholder="Email Address"
             id="email"
+            required
           />
+          <div class="error">Looks like this is not an email</div>
           <label for="password">
             Password
           </label>
@@ -64,7 +76,10 @@
             type="password"
             id="password"
             placeholder="Password"
+            required
           />
+
+          <div class="error">Password cannot be empty</div>
           <button id="button" class="form__button" type="submit">
             Claim your free trial
           </button>
