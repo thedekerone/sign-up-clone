@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Intro component with sign up form</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="hero">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable
+        </p>
+      </div>
+      <div class="form__container">
+        <button class="banner">
+          <div class="bold">Try it free 7 days</div>
+          then $20/mo. thereafter
+        </button>
+        <form id="form" class="form">
+          <label for="first">
+            First Name
+          </label>
+          <input
+            class="input"
+            type="text"
+            id="first"
+            placeholder="First Name"
+            required
+          />
+          <div class="error">First Name cannot be empty</div>
+
+          <label for="last">
+            Last Name
+          </label>
+          <input
+            class="input"
+            type="text"
+            id="last"
+            placeholder="Last Name"
+            required
+          />
+          <div class="error">Last Name cannot be empty</div>
+          <label for="email">
+            Email
+          </label>
+          <input
+            class="input"
+            type="email"
+            placeholder="Email Address"
+            id="email"
+            required
+          />
+          <div class="error">Looks like this is not an email</div>
+          <label for="password">
+            Password
+          </label>
+          <input
+            class="input"
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+
+          <div class="error">Password cannot be empty</div>
+          <button id="button" class="form__button" type="submit">
+            Claim your free trial
+          </button>
+          <div class="agreement">
+            <p>
+              By clicking the button you are agreeing to our
+              <span>Terms and Services</span>
+            </p>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
